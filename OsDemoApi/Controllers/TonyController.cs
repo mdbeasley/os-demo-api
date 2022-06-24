@@ -9,7 +9,7 @@ namespace OsDemoApi.Controllers
         [HttpGet]
         public string Get()
         {
-            string customMessage = Environment.GetEnvironmentVariable('CustomMessage');
+            string customMessage = Environment.GetEnvironmentVariable("CustomMessage");
             
             // Get the 'pod' host name.
             return $"{customMessage} - Host: '{Environment.MachineName}' - {DateTime.UtcNow}";
